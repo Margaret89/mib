@@ -1,0 +1,153 @@
+﻿html,
+body{
+	background: #fff;
+	font-family: $font-site;
+	@include font(normal, normal, 32px, 1.4, $color-text);
+	box-sizing:border-box;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+img{
+	max-width: 100%;
+}
+
+a{
+	color: $color-text;
+}
+
+a:hover,
+a:active,
+a:focus{
+	text-decoration: none;
+}
+
+p{
+	@include font(normal, normal, 32px, 1.4, $color-text);
+	padding: 5px 0;
+}
+
+h1,
+.h1{
+	@include font(normal, bold, 46px, 1, #fff);
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+h2,
+.h2{
+	@include font(normal, normal, 32px, 1, $color-text);
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+h3,
+.h3{
+	@include font(normal, normal, 24px, 1.15, $color-text);
+	margin-bottom: 10px;
+}
+
+.wrapper{
+	width: 100%;
+	max-width: 1920px;
+	margin: 0 auto;
+}
+
+main{
+	position: relative;
+	width: 100%;
+	height: calc(100vh - 3rem);
+	margin-top: 3rem;
+}
+
+.container{
+	padding-left: 4.1rem;
+	padding-right: 4.1rem;
+}
+
+.btn,
+input[type="submit"].btn{
+	display: inline-block;
+	height: 60px;
+	background: $color-blue;
+	border: 1px solid $color-blue;
+	border-radius: 30px;
+	@include font(normal, bold, 16px, 58px, #fff);
+	padding: 0 30px;
+	text-align: center;
+	cursor: pointer;
+	text-decoration: none;
+	min-width: 267px;
+}
+
+.btn:hover,
+input[type="submit"].btn:hover{
+	background: $color-blue-dark;
+}
+
+.btn--border,
+input[type="submit"].btn--border{
+	background: transparent;
+	color: #fff;
+	border-color: #fff;
+}
+
+.btn--border:hover,
+input[type="submit"].btn--border:hover{
+	background: #fff;
+	color: $color-blue;
+}
+
+.btn--white,
+input[type="submit"].btn--white{
+	height: 50px;
+	background: #fff;
+	border-color: #fff;
+	color: #000;
+	line-height: 48px;
+	min-width: 242px;
+}
+
+.btn--white:hover,
+input[type="submit"].btn--white:hover{
+	background: transparent;
+	color: #fff;
+}
+
+
+.h-text-left{text-align: left !important;}
+.h-text-center{text-align: center !important;}
+.h-text-right{text-align: right !important;}
+.h-text-justify{text-align: justify !important;}
+.h-text-uppercase{text-transform: uppercase !important;}
+.h-text-bold {font-weight: 700 !important;}
+
+.t-color-green{color: $color-green;}
+
+.fancybox-content{
+	padding: 0;
+	border-radius: 28px;
+}
+
+.fancybox-button svg{
+	display: none;
+}
+
+.fancybox-slide--html .fancybox-close-small{
+	display: inline-block;
+	width: 22px;
+	height: 22px;
+	background: url(#{$path-img}/ic-close.svg) no-repeat center;
+	padding: 0;
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+}
+
+.fancybox-slide--html .fancybox-close-small:hover{
+	background-image: url(#{$path-img}/ic-close-black.svg);
+}

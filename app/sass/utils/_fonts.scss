@@ -1,0 +1,132 @@
+/*-------------- fonts -----------------*/
+@font-face {
+	font-family: 'Gotham Pro';
+	src: url('#{$path-fonts}/GothamPro/GothamPro-BoldItalic.eot');
+	src: local('Gotham Pro Bold Italic'), local('GothamPro-BoldItalic'),
+		url('#{$path-fonts}/GothamPro/GothamPro-BoldItalic.eot?#iefix') format('embedded-opentype'),
+		url('#{$path-fonts}/GothamPro/GothamPro-BoldItalic.woff') format('woff'),
+		url('#{$path-fonts}/GothamPro/GothamPro-BoldItalic.ttf') format('truetype');
+	font-weight: bold;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Gotham Pro';
+	src: url('#{$path-fonts}/GothamPro/GothamPro-Italic.eot');
+	src: local('Gotham Pro Italic'), local('GothamPro-Italic'),
+		url('#{$path-fonts}/GothamPro/GothamPro-Italic.eot?#iefix') format('embedded-opentype'),
+		url('#{$path-fonts}/GothamPro/GothamPro-Italic.woff') format('woff'),
+		url('#{$path-fonts}/GothamPro/GothamPro-Italic.ttf') format('truetype');
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Gotham Pro';
+	src: url('#{$path-fonts}/GothamPro/GothamPro-Medium.eot');
+	src: local('Gotham Pro Medium'), local('GothamPro-Medium'),
+		url('#{$path-fonts}/GothamPro/GothamPro-Medium.eot?#iefix') format('embedded-opentype'),
+		url('#{$path-fonts}/GothamPro/GothamPro-Medium.woff') format('woff'),
+		url('#{$path-fonts}/GothamPro/GothamPro-Medium.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Gotham Pro';
+	src: url('#{$path-fonts}/GothamPro/GothamPro-BlackItalic.eot');
+	src: local('Gotham Pro Black Italic'), local('GothamPro-BlackItalic'),
+		url('#{$path-fonts}/GothamPro/GothamPro-BlackItalic.eot?#iefix') format('embedded-opentype'),
+		url('#{$path-fonts}/GothamPro/GothamPro-BlackItalic.woff') format('woff'),
+		url('#{$path-fonts}/GothamPro/GothamPro-BlackItalic.ttf') format('truetype');
+	font-weight: 900;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Gotham Pro';
+	src: url('#{$path-fonts}/GothamPro/GothamPro-Bold.eot');
+	src: local('Gotham Pro Bold'), local('GothamPro-Bold'),
+		url('#{$path-fonts}/GothamPro/GothamPro-Bold.eot?#iefix') format('embedded-opentype'),
+		url('#{$path-fonts}/GothamPro/GothamPro-Bold.woff') format('woff'),
+		url('#{$path-fonts}/GothamPro/GothamPro-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Gotham Pro Narrow';
+	src: url('#{$path-fonts}/GothamPro/GothamProNarrow-Bold.eot');
+	src: local('Gotham Pro Narrow Bold'), local('GothamProNarrow-Bold'),
+		url('#{$path-fonts}/GothamPro/GothamProNarrow-Bold.eot?#iefix') format('embedded-opentype'),
+		url('#{$path-fonts}/GothamPro/GothamProNarrow-Bold.woff') format('woff'),
+		url('#{$path-fonts}/GothamPro/GothamProNarrow-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Gotham Pro Narrow';
+	src: url('#{$path-fonts}/GothamPro/GothamProNarrow-Medium.eot');
+	src: local('Gotham Pro Narrow Medium'), local('GothamProNarrow-Medium'),
+		url('#{$path-fonts}/GothamPro/GothamProNarrow-Medium.eot?#iefix') format('embedded-opentype'),
+		url('#{$path-fonts}/GothamPro/GothamProNarrow-Medium.woff') format('woff'),
+		url('#{$path-fonts}/GothamPro/GothamProNarrow-Medium.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Gotham Pro';
+	src: url('#{$path-fonts}/GothamPro/GothamPro-LightItalic.eot');
+	src: local('Gotham Pro Light Italic'), local('GothamPro-LightItalic'),
+		url('#{$path-fonts}/GothamPro/GothamPro-LightItalic.eot?#iefix') format('embedded-opentype'),
+		url('#{$path-fonts}/GothamPro/GothamPro-LightItalic.woff') format('woff'),
+		url('#{$path-fonts}/GothamPro/GothamPro-LightItalic.ttf') format('truetype');
+	font-weight: 300;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Gotham Pro';
+	src: url('#{$path-fonts}/GothamPro/GothamPro-Light.eot');
+	src: local('Gotham Pro Light'), local('GothamPro-Light'),
+		url('#{$path-fonts}/GothamPro/GothamPro-Light.eot?#iefix') format('embedded-opentype'),
+		url('#{$path-fonts}/GothamPro/GothamPro-Light.woff') format('woff'),
+		url('#{$path-fonts}/GothamPro/GothamPro-Light.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Gotham Pro';
+	src: url('#{$path-fonts}/GothamPro/GothamPro-Black.eot');
+	src: local('Gotham Pro Black'), local('GothamPro-Black'),
+		url('#{$path-fonts}/GothamPro/GothamPro-Black.eot?#iefix') format('embedded-opentype'),
+		url('#{$path-fonts}/GothamPro/GothamPro-Black.woff') format('woff'),
+		url('#{$path-fonts}/GothamPro/GothamPro-Black.ttf') format('truetype');
+	font-weight: 900;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Gotham Pro';
+	src: url('#{$path-fonts}/GothamPro/GothamPro.eot');
+	src: local('Gotham Pro'), local('GothamPro'),
+		url('#{$path-fonts}/GothamPro/GothamPro.eot?#iefix') format('embedded-opentype'),
+		url('#{$path-fonts}/GothamPro/GothamPro.woff') format('woff'),
+		url('#{$path-fonts}/GothamPro/GothamPro.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Gotham Pro';
+	src: url('#{$path-fonts}/GothamPro/GothamPro-MediumItalic.eot');
+	src: local('Gotham Pro Medium Italic'), local('GothamPro-MediumItalic'),
+		url('#{$path-fonts}/GothamPro/GothamPro-MediumItalic.eot?#iefix') format('embedded-opentype'),
+		url('#{$path-fonts}/GothamPro/GothamPro-MediumItalic.woff') format('woff'),
+		url('#{$path-fonts}/GothamPro/GothamPro-MediumItalic.ttf') format('truetype');
+	font-weight: 500;
+	font-style: italic;
+}

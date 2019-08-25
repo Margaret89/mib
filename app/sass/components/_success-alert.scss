@@ -1,0 +1,12 @@
+/*-------------- success-alert -----------------*/
+.success-alert{
+	width: 19rem;
+	background: #006848;
+	padding: 3.5rem;
+	color: #fff;
+
+	&__text{
+		@include font(normal, bold, 0.9rem, 1.2, #fff);
+		text-align: center;
+	}
+}

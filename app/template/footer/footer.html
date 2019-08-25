@@ -1,0 +1,37 @@
+<footer class="footer js-footer">
+	<p>Footer</p>
+</footer>
+
+<!-- Форма обратной связи -->
+<div style="display: none;" id="feedback">
+	<form method="get" class="form-site js-valid-form">
+		<div class="form-site__head">Обратная связь</div>
+
+		<div class="form-site__field">
+			<label for="name" class="form-site__label">ФИО</label>
+			<input type="text" id="name">
+		</div>
+
+		<div class="form-site__field">
+			<label for="phone" class="form-site__label">Номер телефона</label>
+			<input type="text" id="phone" class="js-phone">
+		</div>
+
+		<div class="form-site__field">
+			<label for="email" class="form-site__label">Ваш E–mail</label>
+			<input type="email" id="email">
+		</div>
+
+		<div class="form-site__field">
+			<label for="msg" class="form-site__label">Сообщение</label>
+			<textarea id="msg"></textarea>
+		</div>
+
+		<input type="submit" value="Отправить" class="btn btn--white">
+	</form>
+</div>
+
+<!-- Попап об успешной отправки письма -->
+<div style="display: none;" id="msg-success" class="success-alert">
+	<div class="success-alert__text">Ваше сообщение успешно отправлено!</div>
+</div>

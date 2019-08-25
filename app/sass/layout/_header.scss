@@ -1,0 +1,56 @@
+/*-------------- Header -----------------*/
+.header{
+	height: 3rem;
+	background: #fff;
+	padding: 0.5rem 0;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	width: 100%;
+	z-index: 100;
+
+	&__content{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__logos{
+		display: flex;
+		align-items: center;
+		padding-top: 0.5rem;
+	}
+
+	&__logo-mir img,
+	&__logo-bank img{
+		height: 1.3rem;
+		transition: .2s ease;
+	}
+
+	&__logo-mir img:hover,
+	&__logo-bank img:hover{
+		transform: scale(1.05);
+	}
+
+	&__logo-mir{
+		padding-right: 0.6rem;
+		position: relative;
+	}
+
+	&__logo-mir::after{
+		content: '';
+		display: inline-block;
+		width: 1px;
+		height: 90%;
+		background: #b3b3b3;
+		position: absolute;
+		right: 0;
+		@include top-center;
+	}
+
+	&__logo-bank{
+		padding-left: 0.7rem;
+	}
+}

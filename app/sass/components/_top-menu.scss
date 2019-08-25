@@ -1,0 +1,27 @@
+/*-------------- top-menu -----------------*/
+.top-menu{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: calc(100% - 11rem);
+	padding: 0;
+	padding-left: 3.4rem;
+	margin: 0;
+	list-style: none;
+
+	&__item{
+		padding: 0;
+		margin: 0;
+		list-style: none;
+	}
+
+	&__item,
+	&__item a{
+		@include font(normal, normal, 0.5rem, 1, $color-text);
+		text-decoration: none;
+	}
+
+	&__item a:hover{
+		color: $color-green;
+	}
+}

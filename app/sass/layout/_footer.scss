@@ -1,0 +1,17 @@
+/*-------------- Footer -----------------*/
+.footer{
+	height: 100px;
+	background: #fff;
+	position: fixed;
+	bottom: -200px;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	width: 100%;
+	z-index: 100;
+	transition: bottom 0.8s linear 0s;
+
+	&.show{
+		bottom: 0;
+	}
+}

@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Главная страница</title>
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="js/vendor/slick/slick.css">
+		<link rel="stylesheet" href="js/vendor/fancybox/jquery.fancybox.min.css">
+		<link rel="stylesheet" href="css/main.css">
+	</head>
+	<body>
+		<div class="wrapper">
+			<header class="header">
+				<div class="container">
+					<div class="header__content">
+						<div class="header__logos">
+							<a href="https://mironline.ru/" target="_blank" class="header__logo-mir"><img src="img/logo-mir.svg" alt=""></a>
+							<a href="http://www.minbank.ru/?utm_source=mir&utm_medium=landing&utm_campaign=akcia-pokupki-100&utm_content=logo" target="_blank" class="header__logo-bank"><img src="img/logo-bank.png" alt=""></a>
+						</div>
+			
+						<ul class="top-menu">
+							<li class="top-menu__item"><a href="https://super.mironline.ru/" target="_blank">Все Акции «Мир»</a></li>
+			
+							<li class="top-menu__item"><a href="#slide1" class="js-link-move" data-slide="1">Механика Акции</a></li>
+			
+							<li class="top-menu__item"><a href="doc/pdf-test.pdf" target="_blank">Правила акции</a></li>
+			
+							<li class="top-menu__item"><a href="#slide2" class="js-link-move" data-slide="2">Призы</a></li>
+							
+							<li class="top-menu__item"><a href="#slide3" class="js-link-move" data-slide="3">Победители</a></li>
+							
+							<li class="top-menu__item"><a href="doc/pdf-test.pdf" target="_blank">FAQ</a></li>
+							
+							<li class="top-menu__item"><a data-fancybox data-src="#feedback" href="javascript:;">Обратная связь</a></li>
+						</ul>
+					</div>
+				</div>
+			</header>
+			<main>
+				<div id="fullpage" class="fullpage js-fullpage">
+					<section class="fullpage__item" style="background: yellow;" id="slide0">
+
+						<div style="display: block; height: 300px; background: brown">Определённый раздел1
+						</div></section>
+					<section class="fullpage__item" style="background: green;" id="slide1">Определённый раздел2 Определённый раздел2 Определённый раздел2 Определённый раздел2Определённый раздел2Определённый</section>
+					<section class="fullpage__item" style="background: red;" id="slide2">Определённый раздел3</section>
+					<section class="fullpage__item" style="background: blue;" id="slide3">Определённый раздел4</section>
+				</div>
+			</main>
+			<footer class="footer js-footer">
+				<p>Footer</p>
+			</footer>
+			
+			<!-- Форма обратной связи -->
+			<div style="display: none;" id="feedback">
+				<form method="get" class="form-site js-valid-form">
+					<div class="form-site__head">Обратная связь</div>
+			
+					<div class="form-site__field">
+						<label for="name" class="form-site__label">ФИО</label>
+						<input type="text" id="name">
+					</div>
+			
+					<div class="form-site__field">
+						<label for="phone" class="form-site__label">Номер телефона</label>
+						<input type="text" id="phone" class="js-phone">
+					</div>
+			
+					<div class="form-site__field">
+						<label for="email" class="form-site__label">Ваш E–mail</label>
+						<input type="email" id="email">
+					</div>
+			
+					<div class="form-site__field">
+						<label for="msg" class="form-site__label">Сообщение</label>
+						<textarea id="msg"></textarea>
+					</div>
+			
+					<input type="submit" value="Отправить" class="btn btn--white">
+				</form>
+			</div>
+			
+			<!-- Попап об успешной отправки письма -->
+			<div style="display: none;" id="msg-success" class="success-alert">
+				<div class="success-alert__text">Ваше сообщение успешно отправлено!</div>
+			</div>
+		</div>
+
+		<script src="js/jquery-3.4.1.min.js"></script>
+		<script src="js/vendor/slick/slick.min.js"></script>
+		<script src="js/vendor/inputmask/jquery.maskedinput.min.js"></script>
+		<script src="js/vendor/fancybox/jquery.fancybox.min.js"></script>
+		<script src="js/main.js"></script>
+	</body>
+</html>
