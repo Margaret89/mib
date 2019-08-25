@@ -157,3 +157,55 @@
 		}
 	}
 }
+
+@media (max-width: 767px) {
+	.winners-wrap{
+		padding: 3rem 0 2.5rem;
+
+		&__woman,
+		&__man{
+			display: none;
+		}
+
+		h1,
+		.h1{
+			opacity: 1;
+			margin-top: 0;
+		}
+	}
+
+	.winners{
+		margin-top: -2.3rem;
+		margin-left: -20px;
+		margin-right: -20px;
+
+		&__row,
+		&__head{
+			opacity: 1;
+			padding: 1rem 20px 0.9rem;
+		}
+
+		&__head-item,
+		&__item{
+			font-size: 0.6rem;
+		}
+
+		&__head &__head-item:nth-child(2),
+		&__row &__item:nth-child(2){
+			width: 40%;
+		}
+
+		&__head &__head-item:first-child,
+		&__row &__item:first-child{
+			width: 30%;
+		}
+
+		&__head{
+			margin-bottom: 5px;
+		}
+
+		&__row{
+			margin-bottom: 12px;
+		}
+	}
+}

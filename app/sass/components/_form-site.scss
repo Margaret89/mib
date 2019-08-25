@@ -46,3 +46,32 @@
 		margin: 0 auto;
 	}
 }
+
+@media (max-width: 991px) {
+	.form-site{
+		min-width: 26rem;
+
+		&__head{
+			font-size: 1.2rem;
+		}
+
+		&__label{
+			font-size: 0.7rem;
+		}
+	}
+}
+
+@media (max-width: 767px) {
+	.form-site{
+		padding: 2rem 1.2rem;
+		min-width: 17rem;
+
+		&__head{
+			font-size: 1.2rem;
+		}
+
+		&__label{
+			font-size: 0.7rem;
+		}
+	}
+}

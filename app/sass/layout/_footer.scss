@@ -142,3 +142,40 @@
 		}
 	}
 }
+
+@media (max-width: 767px) {
+	.footer{
+		position: static;
+		padding: 3rem 0;
+
+		&__copyright{font-size: 0.88rem;}
+
+		&__bottom{
+			margin-top: 1.5rem;
+			font-size: 0.7rem;
+			line-height: 1.5;
+		}
+	}
+
+	.footer-menu{
+		margin-top: 1.4rem;
+
+		&__item,
+		&__item a{
+			font-size: 0.88rem;
+		}
+
+		&__item{
+			margin-bottom: 1.25rem;
+		}
+	}
+
+	.footer-social{
+		margin-top: 0.4rem;
+
+		&__item{
+			width: 37px;
+			height: 37px;
+		}
+	}
+}

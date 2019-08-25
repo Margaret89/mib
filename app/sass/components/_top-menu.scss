@@ -61,5 +61,31 @@
 @media (max-width: 991px) {
 	.top-menu{
 		display: none;
+		position: absolute;
+		top: 100%;
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+		padding: 1.5rem 4.1rem;
+		width: 100%;
+		background: #fff;
+		text-align: center;
+		border-top: 1px solid $color-green;
+		box-shadow: 0 8px 8px rgba(0,0,0,.25);
+
+		&__item,
+		&__item a{
+			font-size: 1rem;
+		}
+
+		&__item:not(:last-child){
+			margin-bottom: 0.8rem;
+		}
+	}
+}
+
+@media (max-width: 767px) {
+	.top-menu{
+		padding: 1.5rem 20px;
 	}
 }

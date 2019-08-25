@@ -91,5 +91,21 @@
 
 		&__logo-bank{padding-left: 0.8rem;}
 		&__logo-mir{padding-right: 0.8rem;}
+
+		.container{position: static;}
+	}
+}
+
+@media (max-width: 767px) {
+	.header{
+		padding: 1.3rem 0;
+		height: 3.8rem;
+
+		&__logo-mir img,
+		&__logo-bank img{
+			height: 1.2rem;
+		}
+
+		.ic-hamburger{margin-top: -7px;}
 	}
 }

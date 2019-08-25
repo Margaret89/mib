@@ -211,3 +211,62 @@
 		&__price{font-size: 2rem;}
 	}
 }
+
+@media (max-width: 767px) {
+	.award-wrap{
+		padding: 3rem 0 7.5rem;
+
+		&__sheet-left{
+			opacity: 1;
+			left: -60%;
+			width: 100%;
+			background-position: top center;
+		}
+
+		&__sheet-right{
+			opacity: 1;
+			right: 0;
+			width: 70%;
+		}
+
+		&__sheet-bottom{
+			width: 300%;
+			opacity: 1;
+			bottom: 35%;
+			left: 0;
+		}
+
+		h1,
+		.h1{
+			opacity: 1;
+			margin-top: 0;
+		}
+
+		&__present{
+			bottom: 0;
+			left: -1.5rem;
+		}
+	}
+
+	.award{
+		&__item{
+			opacity: 1;
+		}
+
+		&__item:not(:last-child){
+			margin-bottom: 3.9rem;
+		}
+
+		&__img{
+			height: 8rem;
+		}
+
+		&__price{font-size: 1.5rem;}
+
+		&__text{
+			font-size: 1rem;
+			margin-top: 1.3rem;
+			max-width: 225px;
+		}
+	}
+}

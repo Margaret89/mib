@@ -10,3 +10,10 @@
 		text-align: center;
 	}
 }
+
+@media (max-width: 767px) {
+	.success-alert{
+		width: 18rem;
+		padding: 2.5rem;
+	}
+}

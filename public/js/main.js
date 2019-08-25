@@ -114,4 +114,18 @@ $(document).ready(function () {
 		$('#slide'+currentSlide).removeClass('animate');
 		$('#slide'+nextSlide).addClass('animate');
 	});
+
+	// Открыть/Закрыть мобильное меню
+	$('.js-open-menu').click(function(){
+		$('.js-open-menu').toggleClass('active');
+		$('.js-top-menu').slideToggle();
+	});
+
+	 $(document).click(function(event) {
+		if ($(event.target).closest(".js-open-menu").length) return;
+		if ($(event.target).closest(".js-top-menu").length) return;
+		$('.js-open-menu').removeClass('active');
+		$('.js-top-menu').slideUp();
+		event.stopPropagation();
+	});
 });

@@ -93,15 +93,12 @@
 .ic-hamburger.active span::before,
 .ic-hamburger.active span::after {
 	transition-delay: 0s, 0.3s;
-/*	background-color: #fff;*/
 }
-
-/*.ic-hamburger:hover span,
-.ic-hamburger:hover span::before,
-.ic-hamburger:hover span::after{
-	background-color: #fff;
-}*/
-
 .ic-hamburger.active:hover span{
 	background-color: transparent;
+}
+
+@media (max-width: 767px) {
+	.ic-hamburger{width: 50px;}
+	.ic-hamburger span::after{bottom: 3px;}
 }
