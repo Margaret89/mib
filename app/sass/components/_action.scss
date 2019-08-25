@@ -1,0 +1,50 @@
+/*-------------- action -----------------*/
+.action-wrap{
+	height: 100%;
+	padding: 2% 0;
+	background: rgba(1,173,253,1);
+	background: -moz-linear-gradient(top, rgba(1,173,253,1) 0%, rgba(30,95,217,1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(1,173,253,1)), color-stop(100%, rgba(30,95,217,1)));
+	background: -webkit-linear-gradient(top, rgba(1,173,253,1) 0%, rgba(30,95,217,1) 100%);
+	background: -o-linear-gradient(top, rgba(1,173,253,1) 0%, rgba(30,95,217,1) 100%);
+	background: -ms-linear-gradient(top, rgba(1,173,253,1) 0%, rgba(30,95,217,1) 100%);
+	background: linear-gradient(to bottom, rgba(1,173,253,1) 0%, rgba(30,95,217,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#01adfd', endColorstr='#1e5fd9', GradientType=0 );
+}
+
+.action{
+	&__list{
+		display: flex;
+		justify-content: center;
+	}
+
+	&__item{
+		width: 15.8rem;
+		padding: 0 3.3rem;
+		text-align: center;
+	}
+
+	&__img{
+		height: 7.5rem;
+		margin-bottom: 0.8rem;
+	}
+
+	&__img img{
+		display: inline-block;
+		max-height: 100%;
+	}
+
+	&__head{
+		@include font(normal, bold, 0.9rem, 1.15, #fff);
+	}
+
+	&__text{
+		@include font(normal, normal, 0.8rem, 1.2, #fff);
+		margin-top: 0.6rem;
+	}
+
+	&__btn{
+		margin-top: 2rem;
+		text-align: center;
+	}
+}

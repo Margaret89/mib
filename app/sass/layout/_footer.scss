@@ -1,9 +1,9 @@
 /*-------------- Footer -----------------*/
 .footer{
-	height: 100px;
 	background: #fff;
+	padding: 1rem 0;
 	position: fixed;
-	bottom: -200px;
+	bottom: -400px;
 	left: 0;
 	right: 0;
 	margin: 0 auto;
@@ -13,5 +13,78 @@
 
 	&.show{
 		bottom: 0;
+	}
+
+	&__top{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__info{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 81%;
+	}
+
+	&__copyright{
+		@include font(normal, normal, 0.5rem, 1, $color-text);
+		white-space: nowrap;
+	}
+
+	&__bottom{
+		@include font(normal, normal, 0.4rem, 1.5, $color-grey);
+		margin-top: 0.5rem;
+	}
+}
+
+.footer-menu{
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+
+	&__item,
+	&__item a{
+		@include font(normal, normal, 0.5rem, 1, $color-text);
+	}
+
+	&__item{
+		margin: 0;
+		padding: 0 0.8rem;
+		list-style: none;
+	}
+
+	&__item a:hover{
+		text-decoration: none;
+		color: $color-green;
+	}
+}
+
+.footer-social{
+	display: flex;
+	justify-content: flex-end;
+	width: 19%;
+
+	&__item{
+		display: inline-block;
+		width: 37px;
+		height: 37px;
+		border-radius: 50%;
+	}
+
+	&__item--fb{background: $color-green url(#{$path-img}/ic-fb.svg) no-repeat center;}
+	&__item--vk{background: $color-green url(#{$path-img}/ic-vk.svg) no-repeat center;}
+	&__item--ok{background: $color-green url(#{$path-img}/ic-ok.svg) no-repeat center;}
+
+	&__item:hover{
+		background-color: $color-green-light;
+	}
+
+	&__item:not(first-child){
+		margin-left: 15px;
 	}
 }

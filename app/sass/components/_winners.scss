@@ -1,0 +1,53 @@
+/*-------------- winners -----------------*/
+.winners-wrap{
+	background: $color-green url(#{$path-img}/pattern.png) no-repeat top center;
+	background-size: contain;
+	padding: 2% 0;
+}
+
+.winners{
+	width: 61%;
+	margin: -1rem auto 0;
+
+	&__head,
+	&__row{
+		display: flex;
+		justify-content: space-between;
+		flex: 0 0 1;
+		padding: 0.65rem 1rem 0.55rem;
+	}
+
+	&__row{
+		background: #fff;
+		border-radius: 8px;
+		margin-bottom: 8px;
+	}
+
+	&__head-item{
+		@include font(normal, normal, 0.6rem, 1.2, #fff);
+	}
+
+	&__item{
+		@include font(normal, normal, 0.75rem, 1.2, $color-text);
+	}
+
+	&__head-item,
+	&__item{
+		padding: 0 0.2rem;
+	}
+
+	&__head &__head-item:nth-child(2),
+	&__row &__item:nth-child(2){
+		width: 30%;
+	}
+
+	&__head &__head-item:nth-child(3),
+	&__row &__item:nth-child(3){
+		width: 30%;
+	}
+
+	&__head &__head-item:first-child,
+	&__row &__item:first-child{
+		width: 40%;
+	}
+}

@@ -31,24 +31,29 @@ p{
 	padding: 5px 0;
 }
 
+b,
+strong{
+	font-weight: bold;
+}
+
 h1,
 .h1{
-	@include font(normal, bold, 46px, 1, #fff);
+	@include font(normal, bold, 1.9rem, 1, #fff);
 	text-align: center;
-	margin-bottom: 40px;
+	margin-bottom: 2.5rem;
 }
 
 h2,
 .h2{
-	@include font(normal, normal, 32px, 1, $color-text);
+	@include font(normal, normal, 1.5rem, 1, $color-text);
 	text-align: center;
-	margin-bottom: 20px;
+	margin-bottom: 1.5rem;
 }
 
 h3,
 .h3{
-	@include font(normal, normal, 24px, 1.15, $color-text);
-	margin-bottom: 10px;
+	@include font(normal, normal, 1.2rem, 1.15, $color-text);
+	margin-bottom: 1rem;
 }
 
 .wrapper{
@@ -65,6 +70,7 @@ main{
 }
 
 .container{
+	width: 100%;
 	padding-left: 4.1rem;
 	padding-right: 4.1rem;
 }
@@ -72,16 +78,16 @@ main{
 .btn,
 input[type="submit"].btn{
 	display: inline-block;
-	height: 60px;
+	height: 2.5rem;
 	background: $color-blue;
 	border: 1px solid $color-blue;
-	border-radius: 30px;
-	@include font(normal, bold, 16px, 58px, #fff);
-	padding: 0 30px;
+	border-radius: 2.25rem;
+	@include font(normal, bold, 0.65rem, 2.4rem, #fff);
+	padding: 0 1rem;
 	text-align: center;
 	cursor: pointer;
 	text-decoration: none;
-	min-width: 267px;
+	min-width: 11rem;
 }
 
 .btn:hover,
@@ -104,12 +110,12 @@ input[type="submit"].btn--border:hover{
 
 .btn--white,
 input[type="submit"].btn--white{
-	height: 50px;
+	height: 2rem;
 	background: #fff;
 	border-color: #fff;
 	color: #000;
-	line-height: 48px;
-	min-width: 242px;
+	line-height: 1.9rem;
+	min-width: 7.5rem;
 }
 
 .btn--white:hover,

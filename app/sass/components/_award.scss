@@ -1,0 +1,41 @@
+/*-------------- award -----------------*/
+.award-wrap{
+	padding: 2% 0;
+}
+
+.award{
+	&__list{
+		display: flex;
+		justify-content: center;
+	}
+
+	&__item{
+		width: 20rem;
+		padding: 0 4rem;
+		text-align: center;
+	}
+
+	&__img{
+		height: 8.3rem;
+	}
+
+	&__img img{
+		display: inline-block;
+		max-height: 100%;
+	}
+
+	&__text{
+		@include font(normal, normal, 1rem, 1.35, $color-text);
+		margin-top: 0.9rem;
+	}
+
+	&__price{
+		font-size: 1.5rem;
+		font-weight: 500;
+		color: $color-green-light;
+	}
+
+	&__price--blue{
+		color: $color-blue-dark;
+	}
+}
