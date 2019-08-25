@@ -105,4 +105,13 @@ $(document).ready(function () {
 			e.preventDefault();
 		});
 	});
+
+	// Добавление анимации
+	$('#slide0').addClass('animate');
+
+	$('.js-fullpage').on('beforeChange', function(event, slick, currentSlide, nextSlide){
+
+		$('#slide'+currentSlide).removeClass('animate');
+		$('#slide'+nextSlide).addClass('animate');
+	});
 });

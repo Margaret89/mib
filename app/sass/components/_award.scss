@@ -1,6 +1,94 @@
 /*-------------- award -----------------*/
+@keyframes tada {
+	from {
+		transform: scale3d(1, 1, 1);
+	}
+
+	10%,
+	20% {
+		transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+	}
+
+	30%,
+	50%,
+	70%,
+	90% {
+		transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+	}
+
+	40%,
+	60%,
+	80% {
+		transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+	}
+
+	to {
+		transform: scale3d(1, 1, 1);
+	}
+}
 .award-wrap{
+	height: 100%;
 	padding: 2% 0;
+	position: relative;
+	overflow: hidden;
+
+	&__sheet-left{
+		display: inline-block;
+		width: 50%;
+		height: 100%;
+		background: url(#{$path-img}/award-left-sheet.png) no-repeat center left;
+		background-size: contain;
+		position: absolute;
+		top: 0;
+		left: 10%;
+		opacity: 0;
+		transition: all 1s ease 0s;
+	}
+
+	&__sheet-right{
+		display: inline-block;
+		width: 50%;
+		height: 100%;
+		background: url(#{$path-img}/award-right-sheet.png) no-repeat right;
+		background-size: contain;
+		position: absolute;
+		top: 0;
+		right: 0;
+		opacity: 0;
+		transition: all 1s ease 0s;
+	}
+
+	&__sheet-bottom{
+		display: inline-block;
+		width: 100%;
+		height: 50%;
+		background: url(#{$path-img}/award-bottom-sheet.png) no-repeat bottom center;
+		background-size: contain;
+		position: absolute;
+		bottom: 5%;
+		@include left-center;
+		opacity: 0;
+		transition: all 1s ease 0.5s;
+	}
+
+	&__present{
+		display: inline-block;
+		width: 7.5rem;
+		height: 5.2rem;
+		background: url(#{$path-img}/bg-present.png) no-repeat bottom center;
+		background-size: contain;
+		position: absolute;
+		left: 4.1rem;
+		bottom: -200px;
+		transition: bottom 0.5s ease 1.5s;
+	}
+
+	h1,
+	.h1{
+		opacity: 0;
+		margin-top: -0.5rem;
+		transition: all 0.5s ease 0.5s;
+	}
 }
 
 .award{
@@ -13,6 +101,15 @@
 		width: 20rem;
 		padding: 0 4rem;
 		text-align: center;
+		opacity: 0;
+	}
+
+	&__item:first-child{
+		transition: all 0.7s ease 1s;
+	}
+
+	&__item:last-child{
+		transition: all 0.7s ease 1.5s;
 	}
 
 	&__img{
@@ -37,5 +134,37 @@
 
 	&__price--blue{
 		color: $color-blue-dark;
+	}
+}
+
+.fullpage__item.animate{
+	.award-wrap__sheet-left{
+		opacity: 1;
+		left: 0;
+	}
+
+	.award-wrap__sheet-right{
+		opacity: 1;
+		right: -1%;
+	}
+
+	.award-wrap__sheet-bottom{
+		opacity: 1;
+		bottom: 0;
+	}
+
+	.award-wrap h1,
+	.award-wrap .h1{
+		opacity: 1;
+		margin-top: 0;
+	}
+
+	.award__item{
+		opacity: 1;
+	}
+
+	.award-wrap__present{
+		bottom: -2%;
+		animation: tada 1.5s 1 linear 2s;
 	}
 }

@@ -1,8 +1,33 @@
 /*-------------- winners -----------------*/
 .winners-wrap{
-	background: $color-green url(#{$path-img}/pattern.png) no-repeat top center;
+	background: #006447 url(#{$path-img}/pattern.png) no-repeat top center;
 	background-size: contain;
 	padding: 2% 0;
+	position: relative;
+	overflow: hidden;
+
+	&__woman{
+		width: 6.5rem;
+		position: absolute;
+		left: -200px;
+		bottom: -15%;
+		transition: all 1s ease 0s;
+	}
+
+	&__man{
+		width: 6.5rem;
+		position: absolute;
+		right: -200px;
+		bottom: 0;
+		transition: all 1s ease 0s;
+	}
+
+	h1,
+	.h1{
+		opacity: 0;
+		margin-top: -0.5rem;
+		transition: all 0.5s ease 0.5s;
+	}
 }
 
 .winners{
@@ -15,12 +40,14 @@
 		justify-content: space-between;
 		flex: 0 0 1;
 		padding: 0.65rem 1rem 0.55rem;
+		opacity: 0;
 	}
 
 	&__row{
 		background: #fff;
 		border-radius: 8px;
 		margin-bottom: 8px;
+		transition: all 0.5s ease 1s;
 	}
 
 	&__head-item{
@@ -30,6 +57,13 @@
 	&__item{
 		@include font(normal, normal, 0.75rem, 1.2, $color-text);
 	}
+
+	&__row:nth-child(1){transition: all 0.3s ease 1.5s;}
+	&__row:nth-child(2){transition: all 0.3s ease 1.8s;}
+	&__row:nth-child(3){transition: all 0.3s ease 2.1s;}
+	&__row:nth-child(4){transition: all 0.3s ease 2.4s;}
+	&__row:nth-child(5){transition: all 0.3s ease 2.7s;}
+	&__row:nth-child(6){transition: all 0.3s ease 3s;}
 
 	&__head-item,
 	&__item{
@@ -49,5 +83,26 @@
 	&__head &__head-item:first-child,
 	&__row &__item:first-child{
 		width: 40%;
+	}
+}
+
+.fullpage__item.animate{
+	.winners-wrap__woman{
+		left: 4.1rem;
+	}
+
+	.winners-wrap__man{
+		right: 4.1rem;
+	}
+
+	.winners-wrap h1,
+	.winners-wrap .h1{
+		opacity: 1;
+		margin-top: 0;
+	}
+
+	.winners__row,
+	.winners__head{
+		opacity: 1;
 	}
 }
