@@ -158,3 +158,56 @@ input[type="submit"].btn--white:hover{
 .fancybox-slide--html .fancybox-close-small:hover{
 	background-image: url(#{$path-img}/ic-close-black.svg);
 }
+
+@media (max-height: 880px) {
+	html,
+	body{
+		font-size: 24px;
+	}
+}
+
+@media (max-width: 1600px) {
+	html,
+	body{
+		font-size: 24px;
+	}
+}
+
+@media (max-width: 1279px) {
+	.container{
+		padding-left: 3rem;
+		padding-right: 3rem;
+	}
+}
+
+@media (max-width: 991px) {
+	html,
+	body{
+		font-size: 18px;
+	}
+
+	.container{
+		padding-left: 4.1rem;
+		padding-right: 4.1rem;
+	}
+
+	main{
+		height: calc(100vh - 4.2rem);
+		margin-top: 4.2rem;
+	}
+
+	.btn,
+	input[type="submit"].btn{
+		height: 3.5rem;
+		border-radius: 1.75rem;
+		font-size: 0.9rem;
+		line-height: 3.4rem;
+		min-width: 15rem;
+	}
+
+	h1,
+	.h1{
+		font-size: 1.7rem;
+	}
+}
+

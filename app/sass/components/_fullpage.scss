@@ -17,3 +17,9 @@
 		height: 100%;
 	}
 }
+
+@media (max-width: 991px) {
+	.fullpage{
+		&.slick-vertical .slick-slide{height: calc(100vh - 4.2rem);}
+	}
+}

@@ -53,4 +53,43 @@
 	&__logo-bank{
 		padding-left: 0.7rem;
 	}
+
+	.ic-hamburger{
+		display: none;
+	}
+}
+
+@media (max-width: 1279px) {
+	.header{
+		&__logo-bank{padding-left: 0.4rem;}
+		&__logo-mir{padding-right: 0.4rem;}
+
+		&__logo-mir img,
+		&__logo-bank img{
+			height: 1.2rem
+		}
+	}
+}
+
+@media (max-width: 991px) {
+	.header{
+		height: 4.2rem;
+		padding: 1.35rem 0;
+		
+		.ic-hamburger{
+			display: inline-block;
+		}
+
+		&__logos{
+			padding-top: 0;
+		}
+
+		&__logo-mir img,
+		&__logo-bank img{
+			height: 1.35rem
+		}
+
+		&__logo-bank{padding-left: 0.8rem;}
+		&__logo-mir{padding-right: 0.8rem;}
+	}
 }

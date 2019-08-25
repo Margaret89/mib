@@ -121,3 +121,46 @@
 		margin-top: 2rem;
 	}
 }
+
+@media (max-width: 1600px) {
+	.action-wrap{
+		padding: 4.5% 0;
+	}
+}
+
+@media (max-width: 991px) {
+	.action{
+		&__list{
+			display: block;
+		}
+
+		&__item{
+			width: 100%;
+			padding: 0;
+		}
+
+		&__item:not(:last-child){
+			margin-bottom: 1.6rem;
+		}
+
+		&__img{
+			height: 9rem;
+			margin-bottom: 1.8rem;
+		}
+
+		&__head,
+		&__text{
+			max-width: 195px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		&__head{font-size: 1.15rem;}
+
+		&__text{
+			font-size: 0.9rem;
+			line-height: 1.5;
+			margin-top: 0.9rem;
+		}
+	}
+}

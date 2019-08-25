@@ -25,3 +25,41 @@
 		color: $color-green;
 	}
 }
+
+@media (max-height: 880px) {
+	.top-menu{
+		&__item,
+		&__item a{
+			font-size: 0.7rem;
+		}
+	}
+}
+
+@media (max-width: 1600px) {
+	.top-menu{
+		padding-left: 2rem;
+
+		&__item,
+		&__item a{
+			font-size: 0.6rem;
+		}
+	}
+}
+
+@media (max-width: 1279px) {
+	.top-menu{
+		width: calc(100% - 9rem);
+		padding-left: 1rem;
+
+		&__item,
+		&__item a{
+			font-size: 0.5rem;
+		}
+	}
+}
+
+@media (max-width: 991px) {
+	.top-menu{
+		display: none;
+	}
+}

@@ -5,21 +5,22 @@
 	padding: 2% 0;
 	position: relative;
 	overflow: hidden;
+	height: 100%;
 
 	&__woman{
 		width: 6.5rem;
 		position: absolute;
 		left: -200px;
-		bottom: -15%;
-		transition: all 1s ease 0s;
+		bottom: 0;
+		transition: all 1s ease 0.5s;
 	}
 
 	&__man{
 		width: 6.5rem;
 		position: absolute;
 		right: -200px;
-		bottom: 0;
-		transition: all 1s ease 0s;
+		bottom: 10%;
+		transition: all 1s ease 0.5s;
 	}
 
 	h1,
@@ -104,5 +105,55 @@
 	.winners__row,
 	.winners__head{
 		opacity: 1;
+	}
+}
+
+@media (max-width: 1600px) {
+	.winners-wrap{
+		padding: 4.5% 0;
+	}
+}
+
+@media (max-width: 1279px) {
+	.winners{
+		width: 80%;
+	}
+
+	.fullpage__item.animate{
+		.winners-wrap__man{right: 2rem;}
+		.winners-wrap__woman{left: 2rem;}
+	}
+}
+
+@media (max-width: 991px) {
+	.winners-wrap{
+		background-repeat: repeat-y;
+		
+		&__woman{bottom: -4%}
+		&__man{bottom: 2%;}
+	}
+
+	.winners{
+		margin-top: 0;
+		width: auto;
+		margin-left: -4.1rem;
+		margin-right: -4.1rem;
+
+		&__row{
+			border-radius: 0;
+		}
+
+		&__head-item{
+			font-size: 0.8rem;
+		}
+
+		&__item{
+			font-size: 0.9rem;
+		}
+
+		&__row,
+		&__head{
+			padding: 1rem 4.1rem 0.9rem;
+		}
 	}
 }
