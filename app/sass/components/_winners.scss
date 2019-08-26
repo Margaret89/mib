@@ -129,8 +129,8 @@
 	.winners-wrap{
 		background-repeat: repeat-y;
 		
-		&__woman{bottom: -4%}
-		&__man{bottom: 2%;}
+		&__woman{bottom: 9%}
+		&__man{bottom: 14%;}
 	}
 
 	.winners{
@@ -155,6 +155,13 @@
 		&__head{
 			padding: 1rem 4.1rem 0.9rem;
 		}
+	}
+}
+
+@media (max-height: 880px) {
+	.winners-wrap{
+		&__woman{bottom: -4%}
+		&__man{bottom: 2%;}
 	}
 }
 

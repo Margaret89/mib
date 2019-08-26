@@ -574,6 +574,11 @@ input[type="submit"].btn--white:hover {
   margin-top: 0.5rem;
 }
 
+.footer__bottom a {
+  color: #959595;
+  text-decoration: none;
+}
+
 .footer-menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1913,10 +1918,10 @@ input[type="submit"].btn--white:hover {
     background-repeat: repeat-y;
   }
   .winners-wrap__woman {
-    bottom: -4%;
+    bottom: 9%;
   }
   .winners-wrap__man {
-    bottom: 2%;
+    bottom: 14%;
   }
   .winners {
     margin-top: 0;
@@ -1935,6 +1940,15 @@ input[type="submit"].btn--white:hover {
   }
   .winners__row, .winners__head {
     padding: 1rem 4.1rem 0.9rem;
+  }
+}
+
+@media (max-height: 880px) {
+  .winners-wrap__woman {
+    bottom: -4%;
+  }
+  .winners-wrap__man {
+    bottom: 2%;
   }
 }
 

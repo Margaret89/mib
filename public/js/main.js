@@ -3,7 +3,7 @@ $(document).ready(function () {
 	function fullSlider() {
 		const $slider = $(".js-fullpage");
 		$slider
-			.on('init', () => {
+			.on('init', function () {
 				mouseWheel($slider)
 			})
 			.slick({

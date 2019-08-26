@@ -36,6 +36,11 @@
 	&__bottom{
 		@include font(normal, normal, 0.4rem, 1.5, $color-grey);
 		margin-top: 0.5rem;
+
+		a{
+			color: $color-grey;
+			text-decoration: none;
+		}
 	}
 }
 
