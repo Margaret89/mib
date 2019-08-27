@@ -807,6 +807,14 @@ input[type="submit"].btn--white:hover {
   color: #006848;
 }
 
+@media (min-width: 992px) {
+  .top-menu{
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+  }
+}
+
 @media (max-height: 880px) {
   .top-menu__item,
   .top-menu__item a {

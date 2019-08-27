@@ -121,11 +121,13 @@ $(document).ready(function () {
 		$('.js-top-menu').slideToggle();
 	});
 
-	 $(document).click(function(event) {
-		if ($(event.target).closest(".js-open-menu").length) return;
-		if ($(event.target).closest(".js-top-menu").length) return;
-		$('.js-open-menu').removeClass('active');
-		$('.js-top-menu').slideUp();
-		event.stopPropagation();
+	$(document).click(function(event) {
+		if ($windowWidth < 992) {
+			if ($(event.target).closest(".js-open-menu").length) return;
+			if ($(event.target).closest(".js-top-menu").length) return;
+			$('.js-open-menu').removeClass('active');
+			$('.js-top-menu').slideUp();
+			event.stopPropagation();
+		}
 	});
 });

@@ -26,6 +26,12 @@
 	}
 }
 
+@media (min-width: 992px) {
+	.top-menu{
+		display: flex !important;
+	}
+}
+
 @media (max-height: 880px) {
 	.top-menu{
 		&__item,
